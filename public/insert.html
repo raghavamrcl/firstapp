@@ -1,0 +1,17 @@
+<html>
+    <head>
+    <title> insert </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="insController.js"></script>
+    </head>
+    <body ng-app="ins" ng-controller="insertCtrl">
+        <form ng-submit="insData()">
+            <label>Product Id :</label><input type="text" ng-model="product._id" placeholder="Product Id...">
+            <label>Product Name :</label><input type="number" ng-model="product.number" placeholder="Product Name">
+            <label>Product Price :</label><input type="number" ng-model="product.mobile" placeholder="Price">
+            <button ng-submit="insData()">Insert!</button>
+            {{product}}
+        </form>
+    </body>
+</html>

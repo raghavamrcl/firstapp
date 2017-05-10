@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <title> insert </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="retController.js"></script>
+    </head>
+    <body ng-app="ret" ng-controller="retCtrl">
+        <form ng-submit="retData()">
+            <label>Product Id</label><input type="number" ng-model="product._id" placeholder="Product id">
+            <button> Retrieve</button>
+            <ul ng-repeat="data in result">
+                <li>{{data._id}}</li>
+                <li>{{data.prodName}}</li>
+                <li>{{data.prodPrice}}</li>
+                </ul>
+
+        </form>
+    </body>
+</html>

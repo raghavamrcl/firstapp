@@ -1,0 +1,15 @@
+<html>
+    <head>
+    <title> insert </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="delController.js"></script>
+    </head>
+    <body ng-app="del" ng-controller="deleteCtrl">
+        <form ng-submit="delData()">
+            <label>Product Id :</label><input type="text" ng-model="product._id" placeholder="Product Id">
+            <button >Delete</button>
+            {{product._id}}
+        </form>
+    </body>
+</html>
